@@ -23,8 +23,7 @@
         width: 100%;
         background: hsla(0,0%,49.4%,.05); 
         min-height: 100vh;  
-        /* display: flex;
-        justify-content: center; */
+        
     }
     
     table.main{
@@ -77,10 +76,13 @@
         <td>
             <table width="100%">
                 <tr>
-                    <td style="text-align: center; align-items: center;">
-                       <a href="">
-                           <img style="margin:0 auto;max-width: 5rem; height: auto;" src="https://lipana.s3.amazonaws.com/profile_photos/8yb0cdd1c4c3a99_8.png" alt="Lipana logo">
-                        </a> 
+                    <td style="text-align: center; align-items: center; display: flex; justify-content: center;">
+
+                        <div style="width: 5rem;">
+                            <a href="" style="width: 5rem;">
+                            <img style="margin:0 auto; width: 100%; height: auto;" src="https://lipana.s3.amazonaws.com/profile_photos/8yb0cdd1c4c3a99_8.png" alt="Lipana logo">
+                            </a>
+                        </div> 
                     </td>
                 </tr>
             </table>
@@ -117,7 +119,7 @@
                     <!-- overview intro -->
 
                     <div style="color: grey;">
-                        lipana limited has sent you an invoice of 
+                        Lipana limited has sent you an invoice of 
                     </div>
 
 
@@ -202,6 +204,8 @@
                         Invoice Summary
                     </div>
 
+                    <!-- invoice items -->
+
                     <div>
                         <div style="
                         border-bottom: 1px solid hsla(0,0%,85.5%,.5);    
@@ -216,8 +220,95 @@
                                 Web design 
                             </div>
                                     
-                            <div style="text-align: left;">
+                            <div style="text-align: right;">
                                 KSH 12,000.00 
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+
+                    <!-- invoice discount -->
+
+                    <div>
+                        <div style="
+                        border-bottom: 1px solid hsla(0,0%,85.5%,.5);    
+                        color: grey;
+                        font-size: 15px;
+                        padding: 6px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        ">
+
+                            <div style="padding-right: 8px;">
+                                Discount 
+                            </div>
+                                    
+                            <div style="text-align: right;">
+                                KSH 00.00 
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <!-- invoice due total -->
+                    <div>
+                        <div style="
+                        border-bottom: 1px solid hsla(0,0%,85.5%,.5);    
+                        color: grey;
+                        font-size: 15px;
+                        padding: 12px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        ">
+
+                            <div style="
+                            color: #000;
+                            font-weight: 700;
+                            ">
+                                Amount due 
+                            </div>
+                                    
+                            <div style="text-align: right;">
+                                KSH 12,000.00 
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+
+
+                    <!-- invoice message -->
+                    <div>
+                        <div style="  
+                        font-size: 15px;
+                        padding: 24px 0;
+                       
+                        ">
+
+                            <div style="
+                            color: #000;
+                            font-weight: 700;
+                            font-size: large;
+                            color: #000;
+                            font-weight: 700;
+                            padding: 6px 0;
+                            margin-bottom: 6px;
+                            ">
+                                Message
+                            </div>
+                                    
+                            <div style="
+                            font-size: small;
+                            background: hsla(0,0%,91.4%,.5);
+                            padding: 10px;
+                            color: #585858;
+                            border-radius: 6px;">
+
+                                Thank you for your business. 
                             </div>
                             
                            
